@@ -59,7 +59,9 @@ function FileUpload() {
                            />
                         <Progress precentage={uploadPrecentage} />
                    </div>
-                   <input type="submit" className="btn btn-primary mt-5" value="ارسال عکس" />
+                   {/* <input  type="submit" className="btn btn-primary mt-5" value="ارسال عکس" /> */}
+                   <button type="submit" disabled={!file} className="btn btn-primary mt-5">ارسال عکس</button>
+                   
               </form>
 
 
